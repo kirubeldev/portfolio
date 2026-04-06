@@ -1,89 +1,305 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const projects = [
   {
-    title: "movie-app",
-    description: "A movie application that fetches data from a public API. Built with React.js and Tailwind CSS.",
-    image: "/movie.jpg",
-    tags: ["React.js", "Tailwind CSS", "JavaScript"],
-    liveLink: "https://movie-react-nani.vercel.app/",
+    title: "Kifiya Identification Service (KID)",
+    description: "Contributed from scratch to unify user identities by processing hundreds of thousands of records from multiple banks to create 'Golden Customer' profiles.",
+    image: "/placeholder.svg",
+    tags: ["Backend", "Python", "FastAPI", "Data Processing"],
+    liveLink: "#",
     githubLink: "#",
   },
   {
-    title: "Weather-App",
-    description: "A weather application that fetches data from a public API. Built with JavaScript and CSS.",
-    image: "/weather.jpg",
-    tags: ["PHP", "JavaScript", "MySQL", "API"],
-    liveLink: "https://weather-appnan.vercel.app/",
+    title: "KID Dedup Service",
+    description: "A specialized microservice that analyzes bank data to identify and deduplicate user records across different financial institutions.",
+    image: "/placeholder.svg",
+    tags: ["Backend", "Microservices", "Data Analysis"],
+    liveLink: "#",
     githubLink: "#",
   },
   {
-    title: "Todo List",
-    description:
-      "A simple todo list application built with HTML, CSS, and JavaScript. Demonstrates my ability to create user-friendly interfaces.",
-    image: "/task.jpg",
-    tags: ["Java", "OOP", "UI Design"],
-    liveLink: "https://to-do-listnan.vercel.app/",
+    title: "OVP Customer Management",
+    description: "A role-based KYC management system developed for banks and Kifiya to streamline lending and credit assessment workflows.",
+    image: "/placeholder.svg",
+    tags: ["Backend", "KYC", "FinTech", "FastAPI"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "OVP Customer Acquisition",
+    description: "A microservice focused on customer-centric lending, managing business accounts and credit accessibility for small business owners.",
+    image: "/placeholder.svg",
+    tags: ["Backend", "Microservices", "FinTech"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Single Sign On (SSO)",
+    description: "Developed APIs for a unified authentication system leveraging National IDs and the Golden Customer profiles from the KID project.",
+    image: "/placeholder.svg",
+    tags: ["Backend", "Authentication", "SSO", "Security"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Task Tracking System (ICOG)",
+    description: "A robust task management system designed to enhance internal project tracking and boost team productivity within ICOG Labs.",
+    image: "/placeholder.svg",
+    tags: ["Full-Stack", "React", "Node.js"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "ERP System (Bluezon)",
+    description: "Contributed to building a comprehensive Enterprise Resource Planning system with complex API integrations to automate business processes.",
+    image: "/placeholder.svg",
+    tags: ["React", "Express", "API Integration"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "ICOG Landing Page",
+    description: "Designed and implemented a high-performance landing page that significantly improved user engagement and brand presentation.",
+    image: "/placeholder.svg",
+    tags: ["Next.js", "Tailwind CSS", "UI/UX"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Leyu AI Dataset Platform",
+    description: "Developed the frontend for Leyu, a platform enabling intuitive interaction with Ethiopian AI datasets for researchers and developers.",
+    image: "/placeholder.svg",
+    tags: ["React", "AI Data", "Frontend"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "China to Africa E-commerce",
+    description: "A dynamic e-commerce platform with complex API integrations for cross-border product management and order fulfillment.",
+    image: "/placeholder.svg",
+    tags: ["Next.js", "E-commerce", "API"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Kegeberew Bider",
+    description: "A real-time bidding platform using Next.js and Express, featuring live API synchronization for dynamic auction management.",
+    image: "/placeholder.svg",
+    tags: ["Real-time", "Next.js", "Express"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Ermias Amelga Blog",
+    description: "A full-stack personal blog system built with the MERN stack, offering dynamic content management and sleek design.",
+    image: "/placeholder.svg",
+    tags: ["MERN", "Blog", "Full-Stack"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Genesis Investment Bank",
+    description: "A high-performance banking platform built with Next.js, utilizing server-side rendering for optimal security and speed.",
+    image: "/placeholder.svg",
+    tags: ["Next.js", "Banking", "SSR"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Kegeberew Import Export",
+    description: "An international trade platform streamlining product listings and transaction management with robust API support.",
+    image: "/placeholder.svg",
+    tags: ["Web Dev", "API Integration"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Ethio Robo Robotics",
+    description: "A responsive website showcasing advanced robotics solutions in Ethiopia, focusing on interactive brand presentation.",
+    image: "/placeholder.svg",
+    tags: ["Next.js", "Robotics", "Responsive"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Habesha Net",
+    description: "A specialized job posting platform connecting employers and seekers with real-time API-driven job listings.",
+    image: "/placeholder.svg",
+    tags: ["React", "Job Board", "API"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "True Mark",
+    description: "An Ethiopian document authentication system with secure API verification to prevent fraud and ensure document integrity.",
+    image: "/placeholder.svg",
+    tags: ["Security", "Web App", "API"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Vision Insurance",
+    description: "A clean, user-friendly web application for modern insurance services, focusing on ease of use and data management.",
+    image: "/placeholder.svg",
+    tags: ["React", "Insurance", "Web App"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Black Economy Excellence (BEE)",
+    description: "A platform promoting economic empowerment initiatives, designed to foster community growth and awareness.",
+    image: "/placeholder.svg",
+    tags: ["UI/UX", "Next.js"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Invest in Poverty Initiatives",
+    description: "A focused web app supporting poverty alleviation and awareness campaigns with impactful visual storytelling.",
+    image: "/placeholder.svg",
+    tags: ["Web App", "Impact"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Kegeberew Real Estate",
+    description: "A responsive real estate platform with online property listings, registration, and management features.",
+    image: "/placeholder.svg",
+    tags: ["Next.js", "Real Estate"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "E.Visa",
+    description: "A web application for a visa consulting firm featuring booking systems and detailed informational resources.",
+    image: "/placeholder.svg",
+    tags: ["Booking", "Next.js"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Training Solution Platform",
+    description: "Contributed to a scalable e-learning system for managing educational content and trainee progress tracking.",
+    image: "/placeholder.svg",
+    tags: ["E-learning", "React", "Scalability"],
+    liveLink: "#",
     githubLink: "#",
   },
 ];
 
+const PROJECTS_PER_PAGE = 6;
+
 export default function Projects() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
+
+  const indexOfLastProject = currentPage * PROJECTS_PER_PAGE;
+  const indexOfFirstProject = indexOfLastProject - PROJECTS_PER_PAGE;
+  const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
+
+  const paginate = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+    // Smooth scroll to project section top
+    const section = document.getElementById("projects");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-gray-950">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on. Each project demonstrates different skills and technologies.
+            A diverse portfolio showcasing my work in FinTech, AI, E-commerce, and beyond. Total of {projects.length} professional projects.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {currentProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105"
+              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col border border-gray-100 dark:border-gray-700"
             >
-              <div className="relative h-48 w-full">
-                <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+              <div className="relative h-48 w-full group overflow-hidden bg-gray-100 dark:bg-gray-700">
+                <Image 
+                  src={project.image} 
+                  alt={project.title} 
+                  fill 
+                  className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
+                />
+                <div className="absolute inset-0 bg-purple-600/10 group-hover:bg-purple-600/0 transition-colors duration-300" />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+              <div className="p-6 flex-grow flex flex-col">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-1">{project.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow line-clamp-3 leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs px-3 py-1 rounded-full"
+                      className="bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-3">
+                <div className="flex gap-4 border-t border-gray-100 dark:border-gray-700 pt-4 mt-auto">
                   <a
                     href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 px-3 py-1 border border-gray-300 dark:border-gray-600 rounded-md text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                    className="flex items-center gap-2 text-sm font-semibold text-purple-600 dark:text-purple-400 hover:underline"
                   >
-                    <FaExternalLinkAlt className="h-4 w-4" /> Live
+                    <FaExternalLinkAlt size={14} /> Preview
                   </a>
                   <a
                     href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 px-3 py-1 border border-gray-300 dark:border-gray-600 rounded-md text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                    className="flex items-center gap-2 text-sm font-semibold text-gray-600 dark:text-gray-400 hover:underline"
                   >
-                    <FaGithub className="h-4 w-4" /> Code
+                    <FaGithub size={14} /> Source
                   </a>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Pagination Controls */}
+        <div className="flex justify-center items-center gap-2">
+          <button
+            onClick={() => paginate(Math.max(1, currentPage - 1))}
+            disabled={currentPage === 1}
+            className="p-2 rounded-lg border border-gray-200 dark:border-gray-700 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <FaChevronLeft className="text-gray-600 dark:text-gray-400" />
+          </button>
+          
+          <div className="flex gap-2">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((number) => (
+              <button
+                key={number}
+                onClick={() => paginate(number)}
+                className={`w-10 h-10 rounded-lg text-sm font-bold transition-all ${
+                  currentPage === number
+                    ? "bg-purple-600 text-white shadow-lg shadow-purple-200 dark:shadow-none"
+                    : "border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                }`}
+              >
+                {number}
+              </button>
+            ))}
+          </div>
+
+          <button
+            onClick={() => paginate(Math.min(totalPages, currentPage + 1))}
+            disabled={currentPage === totalPages}
+            className="p-2 rounded-lg border border-gray-200 dark:border-gray-700 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <FaChevronRight className="text-gray-600 dark:text-gray-400" />
+          </button>
         </div>
       </div>
     </section>

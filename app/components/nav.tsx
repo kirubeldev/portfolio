@@ -27,30 +27,42 @@ export default function Navbar({ darkMode, toggleTheme }: NavbarProps) {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="#about" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+            <Link href="#about" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
               About
             </Link>
-            <Link href="#skills" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+            <Link href="#experience" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
+              Experience
+            </Link>
+            <Link href="#skills" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
               Skills
             </Link>
-            <Link href="#projects" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+            <Link href="#projects" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
               Projects
             </Link>
-            <Link href="#contact" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+            <Link href="#contact" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
               Contact
             </Link>
            
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden flex items-center">
-         
+          {/* Mobile Navigation & Theme Toggle */}
+          <div className="flex items-center space-x-2">
             <button
-              className="p-2 rounded-full text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none"
-              onClick={toggleMenu}
+              onClick={toggleTheme}
+              className="p-2 rounded-full text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none transition-colors"
+              aria-label="Toggle Theme"
             >
-              {isMenuOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
+              {darkMode ? <BsSun className="h-5 w-5" /> : <BsMoon className="h-5 w-5" />}
             </button>
+            <div className="md:hidden">
+              <button
+                className="p-2 rounded-full text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none transition-colors"
+                onClick={toggleMenu}
+              >
+                {isMenuOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -63,6 +75,13 @@ export default function Navbar({ darkMode, toggleTheme }: NavbarProps) {
               onClick={() => setIsMenuOpen(false)}
             >
               About
+            </Link>
+            <Link
+              href="#experience"
+              className="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Experience
             </Link>
             <Link
               href="#skills"

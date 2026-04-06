@@ -12,11 +12,10 @@ export default function Hero() {
               Hi, I'm <span className="whitespace-nowrap text-purple-600  dark:text-purple-400">Kirubel Menberu</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
-              Full Stack Developer
+              Full-Stack Software Engineer
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 text-lg mb-8">
-              I'm a passionate full-stack developer focused on front-end technologies. I enjoy building responsive, modern
-              web apps and constantly seek to learn, grow, and collaborate with others in the field.
+            <p className="text-gray-600 dark:text-gray-400 text-lg mb-8 leading-relaxed">
+              Results-driven Full-Stack Software Engineer with strong expertise in front-end development using React.js, Next.js, and Tailwind CSS, and growing backend experience with Python, FastAPI, Flask, and Django. Committed to clean code, performance optimization, and continuous learning.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

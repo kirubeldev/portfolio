@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/nav";
 import Hero from "./components/hero";
+import Experience from "./components/experience";
 import Skills from "./components/skill"; 
 import Projects from "./components/projects"; 
 import Contact from "./components/contact"; 
@@ -51,6 +52,7 @@ export default function Home() {
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
       <main>
         <Hero />
+        <Experience />
         <Skills />
         <Projects />
         <Contact />
