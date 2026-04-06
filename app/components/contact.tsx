@@ -25,7 +25,7 @@ export default function Contact() {
                     id="name"
                     type="text"
                     placeholder="Your Name"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
                 <div>
@@ -36,7 +36,7 @@ export default function Contact() {
                     id="email"
                     type="email"
                     placeholder="your.email@example.com"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
               </div>
@@ -48,7 +48,7 @@ export default function Contact() {
                   id="subject"
                   type="text"
                   placeholder="Subject"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -58,10 +58,10 @@ export default function Contact() {
                 <textarea
                   id="message"
                   placeholder="Your message here..."
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[150px]"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[150px]"
                 ></textarea>
               </div>
-              <button className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-purple-600  hover:bg-purple-700 text-white font-medium rounded-md transition-colors">
+              <button className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600  hover:bg-blue-700 text-white font-medium rounded-md transition-colors">
                 <FaEnvelope className="h-4 w-4" /> Send Message
               </button>
             </div>
@@ -72,8 +72,8 @@ export default function Contact() {
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
-                    <FaEnvelope className="h-6 w-6 text-purple-600  dark:text-purple-400" />
+                  <div className="flex-shrink-0 bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                    <FaEnvelope className="h-6 w-6 text-blue-600  dark:text-blue-400" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-900 dark:text-white">Email</h4>
@@ -82,8 +82,8 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
-                    <FaPhone className="h-6 w-6 text-purple-600  dark:text-purple-400" />
+                  <div className="flex-shrink-0 bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                    <FaPhone className="h-6 w-6 text-blue-600  dark:text-blue-400" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-900 dark:text-white">Phone</h4>
@@ -92,8 +92,8 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
-                    <FaMapMarkerAlt className="h-6 w-6 text-purple-600  dark:text-purple-400" />
+                  <div className="flex-shrink-0 bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                    <FaMapMarkerAlt className="h-6 w-6 text-blue-600  dark:text-blue-400" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-900 dark:text-white">Location</h4>
@@ -108,7 +108,7 @@ export default function Contact() {
               <div className="flex space-x-4">
                 <a
                   href="https://github.com/kirubeldev"
-                  className="bg-gray-200 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 p-3 rounded-full transition-colors"
+                  className="bg-gray-200 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900 p-3 rounded-full transition-colors"
                 >
                   <FaGithub className="h-6 w-6 text-gray-700 dark:text-gray-300" />
                 </a>
@@ -117,13 +117,13 @@ export default function Contact() {
                   href="https://linkedin.com/in/kirubel-menberu
 
 "
-                  className="bg-gray-200 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 p-3 rounded-full transition-colors"
+                  className="bg-gray-200 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900 p-3 rounded-full transition-colors"
                 >
                   <FaLinkedin className="h-6 w-6 text-gray-700 dark:text-gray-300" />
                 </a>
                 <a
                   href="https://www.instagram.com/k_i_r_a_official_/"
-                  className="bg-gray-200 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 p-3 rounded-full transition-colors"
+                  className="bg-gray-200 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900 p-3 rounded-full transition-colors"
                 >
                   <FaInstagram className="h-6 w-6 text-gray-700 dark:text-gray-300" />
                 </a>

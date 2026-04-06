@@ -63,7 +63,7 @@ export default function Portfolio() {
     { name: "Tailwind CSS", icon: <SiTailwindcss className="h-8 w-8 text-teal-500" />, level: 85 },
     { name: "C", icon: <SiC className="h-8 w-8 text-gray-600" />, level: 70 },
     { name: "Java", icon: <FaJava className="h-8 w-8 text-red-500" />, level: 65 },
-    { name: "PHP", icon: <FaPhp className="h-8 w-8 text-purple-500" />, level: 60 },
+    { name: "PHP", icon: <FaPhp className="h-8 w-8 text-blue-500" />, level: 60 },
   ];
 
   // Projects data (unchanged)
@@ -120,7 +120,7 @@ export default function Portfolio() {
                   Contact
                 </Link>
                 {/* <button 
-                  className="p-2 rounded-full text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="p-2 rounded-full text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   onClick={toggleTheme}
                   aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
                   title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
@@ -132,7 +132,7 @@ export default function Portfolio() {
 
               <div className="md:hidden flex items-center">
                 {/* <button 
-                  className="p-2 mr-2 rounded-full text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="p-2 mr-2 rounded-full text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   onClick={toggleTheme}
                   aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
                   title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
@@ -191,7 +191,7 @@ export default function Portfolio() {
               <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div className="md:w-1/2">
                   <h1 className="text-3xl md:text-5xl md:whitespace-nowrap font-bold text-gray-900 dark:text-white mb-4">
-                    Hi, I'm <span className="whitespace-nowrap text-purple-600  dark:text-purple-400">Kirubel Menberu</span>
+                    Hi, I'm <span className="whitespace-nowrap text-blue-600  dark:text-blue-400">Kirubel Menberu</span>
                   </h1>
                   <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
                     Full Stack Developer
@@ -199,19 +199,19 @@ export default function Portfolio() {
                   <p className="text-gray-600 dark:text-gray-400 text-lg mb-8">
                     I'm  passionated full-stack developer focused on front-end technologies. I enjoy building responsive, modern web apps and constantly seek to learn, grow, and collaborate with others in the field.  </p>
                   <div className="flex flex-wrap gap-4">
-                    <button className="px-6 py-3 bg-purple-600  hover:bg-purple-700 text-white font-medium rounded-md transition-colors">
+                    <button className="px-6 py-3 bg-blue-600  hover:bg-blue-700 text-white font-medium rounded-md transition-colors">
                       Download Resume
                     //use Yishurun's CV.pdf for the resume
                     </button>
                     <Link href="#contact">
-                      <button className="px-6 py-3 border border-purple-600  text-purple-600  dark:text-purple-400 dark:border-purple-400 font-medium rounded-md hover:bg-purple-50 dark:hover:bg-gray-800 transition-colors">
+                      <button className="px-6 py-3 border border-blue-600  text-blue-600  dark:text-blue-400 dark:border-blue-400 font-medium rounded-md hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors">
                         Contact Me
                       </button>
                     </Link>
                   </div>
                 </div>
                 <div className="md:w-1/2 flex justify-center">
-                  <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-600  dark:border-purple-400 shadow-xl">
+                  <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-600  dark:border-blue-400 shadow-xl">
                     <Image
                       src="/me.jpg"
                       alt="Your Name"
@@ -248,7 +248,7 @@ export default function Portfolio() {
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{skill.name}</h3>
                       <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mb-2">
                         <div
-                          className="bg-purple-600  dark:bg-purple-400 h-2.5 rounded-full"
+                          className="bg-blue-600  dark:bg-blue-400 h-2.5 rounded-full"
                           style={{ width: `${skill.level}%` }}
                         ></div>
                       </div>
@@ -286,7 +286,7 @@ export default function Portfolio() {
                         {project.tags.map((tag, tagIndex) => (
                           <span
                             key={tagIndex}
-                            className="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs px-3 py-1 rounded-full"
+                            className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full"
                           >
                             {tag}
                           </span>
@@ -340,7 +340,7 @@ export default function Portfolio() {
                           id="name"
                           type="text"
                           placeholder="Your Name"
-                          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                       </div>
                       <div>
@@ -351,7 +351,7 @@ export default function Portfolio() {
                           id="email"
                           type="email"
                           placeholder="your.email@example.com"
-                          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                       </div>
                     </div>
@@ -363,7 +363,7 @@ export default function Portfolio() {
                         id="subject"
                         type="text"
                         placeholder="Subject"
-                        className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
                     <div>
@@ -373,10 +373,10 @@ export default function Portfolio() {
                       <textarea
                         id="message"
                         placeholder="Your message here..."
-                        className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500 min-h-[150px]"
+                        className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[150px]"
                       ></textarea>
                     </div>
-                    <button className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-purple-600  hover:bg-purple-700 text-white font-medium rounded-md transition-colors">
+                    <button className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600  hover:bg-blue-700 text-white font-medium rounded-md transition-colors">
                       <FaEnvelope className="h-4 w-4" /> Send Message
                     </button>
                   </form>
@@ -387,8 +387,8 @@ export default function Portfolio() {
                     <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Contact Information</h3>
                     <div className="space-y-6">
                       <div className="flex items-start">
-                        <div className="flex-shrink-0 bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
-                          <FaEnvelope className="h-6 w-6 text-purple-600  dark:text-purple-400" />
+                        <div className="flex-shrink-0 bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                          <FaEnvelope className="h-6 w-6 text-blue-600  dark:text-blue-400" />
                         </div>
                         <div>
                           <h4 className="text-lg font-medium text-gray-900 dark:text-white">Email</h4>
@@ -397,8 +397,8 @@ export default function Portfolio() {
                       </div>
 
                       <div className="flex items-start">
-                        <div className="flex-shrink-0 bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
-                          <FaPhone className="h-6 w-6 text-purple-600  dark:text-purple-400" />
+                        <div className="flex-shrink-0 bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                          <FaPhone className="h-6 w-6 text-blue-600  dark:text-blue-400" />
                         </div>
                         <div>
                           <h4 className="text-lg font-medium text-gray-900 dark:text-white">Phone</h4>
@@ -407,8 +407,8 @@ export default function Portfolio() {
                       </div>
 
                       <div className="flex items-start">
-                        <div className="flex-shrink-0 bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
-                          <FaMapMarkerAlt className="h-6 w-6 text-purple-600  dark:text-purple-400" />
+                        <div className="flex-shrink-0 bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                          <FaMapMarkerAlt className="h-6 w-6 text-blue-600  dark:text-blue-400" />
                         </div>
                         <div>
                           <h4 className="text-lg font-medium text-gray-900 dark:text-white">Location</h4>
@@ -423,25 +423,25 @@ export default function Portfolio() {
                     <div className="flex space-x-4">
                       <a
                         href="https://github.com/Yishurun1G"
-                        className="bg-gray-200 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 p-3 rounded-full transition-colors"
+                        className="bg-gray-200 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900 p-3 rounded-full transition-colors"
                       >
                         <FaGithub className="h-6 w-6 text-gray-700 dark:text-gray-300" />
                       </a>
                       <a
                         href="https://x.com/Yishurun_g?t=yH4W1iXCCHpEu5HKplQHhQ&s=09"
-                        className="bg-gray-200 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 p-3 rounded-full transition-colors"
+                        className="bg-gray-200 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900 p-3 rounded-full transition-colors"
                       >
                         <FaTwitter className="h-6 w-6 text-gray-700 dark:text-gray-300" />
                       </a>
                       <a
                         href="https://www.linkedin.com/in/yishurun-getachew"
-                        className="bg-gray-200 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 p-3 rounded-full transition-colors"
+                        className="bg-gray-200 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900 p-3 rounded-full transition-colors"
                       >
                         <FaLinkedin className="h-6 w-6 text-gray-700 dark:text-gray-300" />
                       </a>
                       <a
                         href="https://www.instagram.com/shalomjeshurun?igsh=dms4cTQ4dzdmMXc2"
-                        className="bg-gray-200 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 p-3 rounded-full transition-colors"
+                        className="bg-gray-200 dark:bg-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900 p-3 rounded-full transition-colors"
                       >
                         <FaInstagram className="h-6 w-6 text-gray-700 dark:text-gray-300" />
                       </a>

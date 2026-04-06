@@ -15,8 +15,8 @@ export default function Home() {
   // Handle dark mode initialization and updates
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialDarkMode = savedTheme ? savedTheme === "dark" : prefersDark;
+    // Default to dark mode if no saved theme exists
+    const initialDarkMode = savedTheme ? savedTheme === "dark" : true; 
 
     // Apply initial dark mode class to document root
     if (initialDarkMode) {
@@ -28,6 +28,7 @@ export default function Home() {
     // Set initial state and save to localStorage
     setDarkMode(initialDarkMode);
     localStorage.setItem("theme", initialDarkMode ? "dark" : "light");
+    document.documentElement.classList.toggle("dark", initialDarkMode);
 
     // Update class on state change
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");

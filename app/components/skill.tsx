@@ -53,10 +53,10 @@ const skillCategories = [
   {
     title: "State & Logic",
     skills: [
-      { name: "Redux / RTK", icon: <SiRedux className="text-purple-600" /> },
+      { name: "Redux / RTK", icon: <SiRedux className="text-blue-600" /> },
       { name: "Zustand", icon: <span className="font-bold text-xs">ZD</span> },
       { name: "Context API", icon: <FaReact className="text-blue-400" /> },
-      { name: "RTK Query", icon: <SiRedux className="text-purple-700" /> },
+      { name: "RTK Query", icon: <SiRedux className="text-blue-700" /> },
       { name: "Formik / Hook Form", icon: <span className="font-bold text-xs">F</span> },
     ],
   },
@@ -98,16 +98,16 @@ export default function Skills() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {skillCategories.map((category, catIndex) => (
-            <div key={catIndex} className="bg-white dark:bg-gray-800/50 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-purple-200 dark:hover:border-purple-900/50 transition-all duration-300">
+            <div key={catIndex} className="bg-white dark:bg-gray-800/50 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:border-blue-200 dark:hover:border-blue-900/50 transition-all duration-300">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-                <span className="w-2 h-6 bg-purple-600 dark:bg-purple-400 rounded-full" />
+                <span className="w-2 h-6 bg-blue-600 dark:bg-blue-400 rounded-full" />
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-2.5">
                 {category.skills.map((skill, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-2.5 bg-gray-50 dark:bg-gray-900/80 px-3.5 py-2 rounded-lg border border-gray-100 dark:border-gray-700/50 hover:bg-purple-50 dark:hover:bg-purple-900/20 hover:scale-105 transition-all cursor-default group"
+                    className="flex items-center gap-2.5 bg-gray-50 dark:bg-gray-900/80 px-3.5 py-2 rounded-lg border border-gray-100 dark:border-gray-700/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:scale-105 transition-all cursor-default group"
                   >
                     <span className="text-xl opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-transform">
                       {skill.icon}

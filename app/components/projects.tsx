@@ -235,13 +235,13 @@ export default function Projects() {
                   />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-500" />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-purple-600 dark:text-purple-400 text-[10px] font-bold px-2 py-1 rounded shadow-sm uppercase tracking-tighter">
+                    <span className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-blue-600 dark:text-blue-400 text-[10px] font-bold px-2 py-1 rounded shadow-sm uppercase tracking-tighter">
                       Project {overallIndex + 1}
                     </span>
                   </div>
                 </div>
                 <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-1 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow line-clamp-3 leading-relaxed">
@@ -251,7 +251,7 @@ export default function Projects() {
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="bg-purple-50 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-sm border border-purple-100 dark:border-purple-800"
+                        className="bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-sm border border-blue-100 dark:border-blue-800"
                       >
                         {tag}
                       </span>
@@ -260,7 +260,7 @@ export default function Projects() {
                   <div className="flex gap-4 border-t border-gray-100 dark:border-gray-700 pt-4 mt-auto">
                     <a
                       href="#"
-                      className="flex items-center gap-2 text-sm font-bold text-purple-600 dark:text-purple-400 hover:translate-x-1 transition-transform"
+                      className="flex items-center gap-2 text-sm font-bold text-blue-600 dark:text-blue-400 hover:translate-x-1 transition-transform"
                     >
                       <FaExternalLinkAlt size={14} /> View Details
                     </a>
@@ -294,8 +294,8 @@ export default function Projects() {
                 onClick={() => paginate(number)}
                 className={`w-12 h-12 rounded-xl text-sm font-bold transition-all ${
                   currentPage === number
-                    ? "bg-purple-600 text-white shadow-xl shadow-purple-500/30 scale-110"
-                    : "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-purple-400"
+                    ? "bg-blue-600 text-white shadow-xl shadow-blue-500/30 scale-110"
+                    : "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-blue-400"
                 }`}
               >
                 {number}
