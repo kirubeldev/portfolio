@@ -217,9 +217,10 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {currentProjects.map((project, index) => {
-            // Sequential image selection based on project overall index
+            // Sequential image selection based on project overall index (using 4 images to break grid patterns)
             const overallIndex = indexOfFirstProject + index;
-            const projectImage = overallIndex % 2 === 0 ? "/project-fintech.png" : "/project-ai.png";
+            const projectImages = ["/project-fintech.png", "/project-ai.png", "/project-saas.png", "/project-robotics.png"];
+            const projectImage = projectImages[overallIndex % 4];
             
             return (
               <div

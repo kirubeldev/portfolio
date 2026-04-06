@@ -15,7 +15,7 @@ export default function Hero() {
               Full-Stack Software Engineer
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg mb-8 leading-relaxed">
-              Results-driven Full-Stack Software Engineer with strong expertise in front-end development using React.js, Next.js, and Tailwind CSS, and growing backend experience with Python, FastAPI, Flask, and Django. Committed to clean code, performance optimization, and continuous learning.
+              Results-driven Full-Stack Software Engineer with strong expertise in front-end development using React.js, Next.js, and Tailwind CSS, and growing backend experience with Node.js, Express, Python, FastAPI, Flask, and Django. Committed to clean code, performance optimization, and continuous learning.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

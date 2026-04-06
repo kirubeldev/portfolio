@@ -42,7 +42,18 @@ export default function Home() {
 
     // Cleanup listener
     return () => mediaQuery.removeEventListener("change", handleChange);
-  }, []); // Empty dependency array for one-time setup
+  }, []); // Initial setup
+
+  // Update DOM and local storage on theme change
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   const toggleTheme = () => {
     setDarkMode((prev) => !prev);
