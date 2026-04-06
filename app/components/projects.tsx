@@ -473,22 +473,6 @@ export default function Projects() {
                       ))}
                     </div>
                   </div>
-
-                  {/* Actions */}
-                  <div className="pt-4 flex flex-wrap gap-4">
-                    <a
-                      href={selectedProject.liveLink}
-                      className="px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl transition-all shadow-lg shadow-blue-600/20 flex items-center gap-2 hover:scale-105"
-                    >
-                      <FaExternalLinkAlt size={14} /> Live Project
-                    </a>
-                    <a
-                      href={selectedProject.githubLink}
-                      className="px-8 py-3.5 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white font-bold rounded-2xl transition-all border border-gray-200 dark:border-gray-700 flex items-center gap-2 hover:bg-gray-200 dark:hover:bg-gray-700"
-                    >
-                      <FaGithub size={16} /> Source Code
-                    </a>
-                  </div>
                 </div>
               </div>
             </motion.div>

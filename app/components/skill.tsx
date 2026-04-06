@@ -7,7 +7,8 @@ import {
   SiTailwindcss, SiNextdotjs, SiFastapi, SiFlask, SiDjango, 
   SiMongodb, SiPostgresql, SiRedux, SiPostman, SiTypescript,
   SiPrisma, SiGraphql, SiRedis, SiJest, SiTestinglibrary,
-  SiAuthentik, SiJsonwebtokens, SiJira, SiSentry
+  SiAuthentik, SiJsonwebtokens, SiJira, SiSentry,
+  SiRabbitmq, SiApachekafka, SiApachepulsar
 } from "react-icons/si";
 
 const skillCategories = [
@@ -34,6 +35,8 @@ const skillCategories = [
       { name: "Django / Flask", icon: <SiDjango className="text-green-800" /> },
       { name: "RESTful APIs", icon: <FaTools className="text-gray-500" /> },
       { name: "Microservices", icon: <span className="font-bold text-xs">μS</span> },
+      { name: "RabbitMQ / Kafka", icon: <SiRabbitmq className="text-orange-600" /> },
+      { name: "Apache Pulsar", icon: <SiApachepulsar className="text-blue-400" /> },
       { name: "WebSockets", icon: <FaTerminal className="text-gray-400" /> },
     ],
   },
