@@ -7,7 +7,7 @@ import {
   SiTailwindcss, SiNextdotjs, SiFastapi, SiFlask, SiDjango, 
   SiMongodb, SiPostgresql, SiRedux, SiPostman, SiTypescript,
   SiPrisma, SiGraphql, SiRedis, SiJest, SiTestinglibrary,
-  SiAuthentic8, SiJsonwebtokens, SiJira, SiAgilegradient, SiSentry
+  SiAuthentik, SiJsonwebtokens, SiJira, SiSentry
 } from "react-icons/si";
 
 const skillCategories = [

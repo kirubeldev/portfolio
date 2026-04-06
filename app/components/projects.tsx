@@ -164,6 +164,27 @@ const projects = [
     liveLink: "#",
     githubLink: "#",
   },
+  {
+    title: "Loan Collection Management System",
+    description: "A comprehensive frontend management system built with Next.js to track and manage loan collections, payments, and debtor communication.",
+    tags: ["Frontend", "Next.js", "FinTech", "Management"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Loan Referral Management System",
+    description: "A specialized platform designed to manage and track loan referrals, agent commissions, and application progress in real-time.",
+    tags: ["Full-Stack", "Workflow", "FinTech"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Rent & Rente Management System",
+    description: "A strategic proposal and prototype for a government-level system to manage public property rentals, tax collections, and registration.",
+    tags: ["Government", "System Design", "Next.js"],
+    liveLink: "#",
+    githubLink: "#",
+  },
 ];
 
 const PROJECTS_PER_PAGE = 6;
