@@ -6,7 +6,6 @@ const projects = [
   {
     title: "Kifiya Identification Service (KID)",
     description: "Contributed from scratch to unify user identities by processing hundreds of thousands of records from multiple banks to create 'Golden Customer' profiles.",
-    image: "/placeholder.svg",
     tags: ["Backend", "Python", "FastAPI", "Data Processing"],
     liveLink: "#",
     githubLink: "#",
@@ -14,7 +13,6 @@ const projects = [
   {
     title: "KID Dedup Service",
     description: "A specialized microservice that analyzes bank data to identify and deduplicate user records across different financial institutions.",
-    image: "/placeholder.svg",
     tags: ["Backend", "Microservices", "Data Analysis"],
     liveLink: "#",
     githubLink: "#",
@@ -22,7 +20,6 @@ const projects = [
   {
     title: "OVP Customer Management",
     description: "A role-based KYC management system developed for banks and Kifiya to streamline lending and credit assessment workflows.",
-    image: "/placeholder.svg",
     tags: ["Backend", "KYC", "FinTech", "FastAPI"],
     liveLink: "#",
     githubLink: "#",
@@ -30,7 +27,6 @@ const projects = [
   {
     title: "OVP Customer Acquisition",
     description: "A microservice focused on customer-centric lending, managing business accounts and credit accessibility for small business owners.",
-    image: "/placeholder.svg",
     tags: ["Backend", "Microservices", "FinTech"],
     liveLink: "#",
     githubLink: "#",
@@ -38,7 +34,6 @@ const projects = [
   {
     title: "Single Sign On (SSO)",
     description: "Developed APIs for a unified authentication system leveraging National IDs and the Golden Customer profiles from the KID project.",
-    image: "/placeholder.svg",
     tags: ["Backend", "Authentication", "SSO", "Security"],
     liveLink: "#",
     githubLink: "#",
@@ -46,7 +41,6 @@ const projects = [
   {
     title: "Task Tracking System (ICOG)",
     description: "A robust task management system designed to enhance internal project tracking and boost team productivity within ICOG Labs.",
-    image: "/placeholder.svg",
     tags: ["Full-Stack", "React", "Node.js"],
     liveLink: "#",
     githubLink: "#",
@@ -54,7 +48,6 @@ const projects = [
   {
     title: "ERP System (Bluezon)",
     description: "Contributed to building a comprehensive Enterprise Resource Planning system with complex API integrations to automate business processes.",
-    image: "/placeholder.svg",
     tags: ["React", "Express", "API Integration"],
     liveLink: "#",
     githubLink: "#",
@@ -62,7 +55,6 @@ const projects = [
   {
     title: "ICOG Landing Page",
     description: "Designed and implemented a high-performance landing page that significantly improved user engagement and brand presentation.",
-    image: "/placeholder.svg",
     tags: ["Next.js", "Tailwind CSS", "UI/UX"],
     liveLink: "#",
     githubLink: "#",
@@ -70,7 +62,6 @@ const projects = [
   {
     title: "Leyu AI Dataset Platform",
     description: "Developed the frontend for Leyu, a platform enabling intuitive interaction with Ethiopian AI datasets for researchers and developers.",
-    image: "/placeholder.svg",
     tags: ["React", "AI Data", "Frontend"],
     liveLink: "#",
     githubLink: "#",
@@ -78,7 +69,6 @@ const projects = [
   {
     title: "China to Africa E-commerce",
     description: "A dynamic e-commerce platform with complex API integrations for cross-border product management and order fulfillment.",
-    image: "/placeholder.svg",
     tags: ["Next.js", "E-commerce", "API"],
     liveLink: "#",
     githubLink: "#",
@@ -86,7 +76,6 @@ const projects = [
   {
     title: "Kegeberew Bider",
     description: "A real-time bidding platform using Next.js and Express, featuring live API synchronization for dynamic auction management.",
-    image: "/placeholder.svg",
     tags: ["Real-time", "Next.js", "Express"],
     liveLink: "#",
     githubLink: "#",
@@ -94,7 +83,6 @@ const projects = [
   {
     title: "Ermias Amelga Blog",
     description: "A full-stack personal blog system built with the MERN stack, offering dynamic content management and sleek design.",
-    image: "/placeholder.svg",
     tags: ["MERN", "Blog", "Full-Stack"],
     liveLink: "#",
     githubLink: "#",
@@ -102,7 +90,6 @@ const projects = [
   {
     title: "Genesis Investment Bank",
     description: "A high-performance banking platform built with Next.js, utilizing server-side rendering for optimal security and speed.",
-    image: "/placeholder.svg",
     tags: ["Next.js", "Banking", "SSR"],
     liveLink: "#",
     githubLink: "#",
@@ -110,7 +97,6 @@ const projects = [
   {
     title: "Kegeberew Import Export",
     description: "An international trade platform streamlining product listings and transaction management with robust API support.",
-    image: "/placeholder.svg",
     tags: ["Web Dev", "API Integration"],
     liveLink: "#",
     githubLink: "#",
@@ -118,7 +104,6 @@ const projects = [
   {
     title: "Ethio Robo Robotics",
     description: "A responsive website showcasing advanced robotics solutions in Ethiopia, focusing on interactive brand presentation.",
-    image: "/placeholder.svg",
     tags: ["Next.js", "Robotics", "Responsive"],
     liveLink: "#",
     githubLink: "#",
@@ -126,7 +111,6 @@ const projects = [
   {
     title: "Habesha Net",
     description: "A specialized job posting platform connecting employers and seekers with real-time API-driven job listings.",
-    image: "/placeholder.svg",
     tags: ["React", "Job Board", "API"],
     liveLink: "#",
     githubLink: "#",
@@ -134,7 +118,6 @@ const projects = [
   {
     title: "True Mark",
     description: "An Ethiopian document authentication system with secure API verification to prevent fraud and ensure document integrity.",
-    image: "/placeholder.svg",
     tags: ["Security", "Web App", "API"],
     liveLink: "#",
     githubLink: "#",
@@ -142,7 +125,6 @@ const projects = [
   {
     title: "Vision Insurance",
     description: "A clean, user-friendly web application for modern insurance services, focusing on ease of use and data management.",
-    image: "/placeholder.svg",
     tags: ["React", "Insurance", "Web App"],
     liveLink: "#",
     githubLink: "#",
@@ -150,7 +132,6 @@ const projects = [
   {
     title: "Black Economy Excellence (BEE)",
     description: "A platform promoting economic empowerment initiatives, designed to foster community growth and awareness.",
-    image: "/placeholder.svg",
     tags: ["UI/UX", "Next.js"],
     liveLink: "#",
     githubLink: "#",
@@ -158,7 +139,6 @@ const projects = [
   {
     title: "Invest in Poverty Initiatives",
     description: "A focused web app supporting poverty alleviation and awareness campaigns with impactful visual storytelling.",
-    image: "/placeholder.svg",
     tags: ["Web App", "Impact"],
     liveLink: "#",
     githubLink: "#",
@@ -166,7 +146,6 @@ const projects = [
   {
     title: "Kegeberew Real Estate",
     description: "A responsive real estate platform with online property listings, registration, and management features.",
-    image: "/placeholder.svg",
     tags: ["Next.js", "Real Estate"],
     liveLink: "#",
     githubLink: "#",
@@ -174,7 +153,6 @@ const projects = [
   {
     title: "E.Visa",
     description: "A web application for a visa consulting firm featuring booking systems and detailed informational resources.",
-    image: "/placeholder.svg",
     tags: ["Booking", "Next.js"],
     liveLink: "#",
     githubLink: "#",
@@ -182,7 +160,6 @@ const projects = [
   {
     title: "Training Solution Platform",
     description: "Contributed to a scalable e-learning system for managing educational content and trainee progress tracking.",
-    image: "/placeholder.svg",
     tags: ["E-learning", "React", "Scalability"],
     liveLink: "#",
     githubLink: "#",
@@ -201,7 +178,6 @@ export default function Projects() {
 
   const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber);
-    // Smooth scroll to project section top
     const section = document.getElementById("projects");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -219,52 +195,65 @@ export default function Projects() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {currentProjects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col border border-gray-100 dark:border-gray-700"
-            >
-              <div className="relative h-48 w-full group overflow-hidden bg-gray-100 dark:bg-gray-700">
-                <Image 
-                  src={project.image} 
-                  alt={project.title} 
-                  fill 
-                  className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
-                />
-                <div className="absolute inset-0 bg-purple-600/10 group-hover:bg-purple-600/0 transition-colors duration-300" />
-              </div>
-              <div className="p-6 flex-grow flex flex-col">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-1">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow line-clamp-3 leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded"
-                    >
-                      {tag}
+          {currentProjects.map((project, index) => {
+            // Sequential image selection based on project overall index
+            const overallIndex = indexOfFirstProject + index;
+            const projectImage = overallIndex % 2 === 0 ? "/project-fintech.png" : "/project-ai.png";
+            
+            return (
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col border border-gray-100 dark:border-gray-700 group"
+              >
+                <div className="relative h-56 w-full overflow-hidden bg-gray-100 dark:bg-gray-700">
+                  <Image 
+                    src={projectImage} 
+                    alt={project.title} 
+                    fill 
+                    className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 ease-out" 
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all duration-500" />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-purple-600 dark:text-purple-400 text-[10px] font-bold px-2 py-1 rounded shadow-sm uppercase tracking-tighter">
+                      Project {overallIndex + 1}
                     </span>
-                  ))}
+                  </div>
                 </div>
-                <div className="flex gap-4 border-t border-gray-100 dark:border-gray-700 pt-4 mt-auto">
-                  <a
-                    href={project.liveLink}
-                    className="flex items-center gap-2 text-sm font-semibold text-purple-600 dark:text-purple-400 hover:underline"
-                  >
-                    <FaExternalLinkAlt size={14} /> Preview
-                  </a>
-                  <a
-                    href={project.githubLink}
-                    className="flex items-center gap-2 text-sm font-semibold text-gray-600 dark:text-gray-400 hover:underline"
-                  >
-                    <FaGithub size={14} /> Source
-                  </a>
+                <div className="p-6 flex-grow flex flex-col">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-1 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow line-clamp-3 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="bg-purple-50 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-sm border border-purple-100 dark:border-purple-800"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex gap-4 border-t border-gray-100 dark:border-gray-700 pt-4 mt-auto">
+                    <a
+                      href="#"
+                      className="flex items-center gap-2 text-sm font-bold text-purple-600 dark:text-purple-400 hover:translate-x-1 transition-transform"
+                    >
+                      <FaExternalLinkAlt size={14} /> View Details
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center gap-2 text-sm font-bold text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors ml-auto"
+                    >
+                      <FaGithub size={14} />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Pagination Controls */}
@@ -272,7 +261,7 @@ export default function Projects() {
           <button
             onClick={() => paginate(Math.max(1, currentPage - 1))}
             disabled={currentPage === 1}
-            className="p-2 rounded-lg border border-gray-200 dark:border-gray-700 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            className="p-2 rounded-xl border border-gray-200 dark:border-gray-700 disabled:opacity-20 disabled:cursor-not-allowed hover:bg-white dark:hover:bg-gray-800 hover:shadow-md transition-all h-12 w-12 flex items-center justify-center"
           >
             <FaChevronLeft className="text-gray-600 dark:text-gray-400" />
           </button>
@@ -282,10 +271,10 @@ export default function Projects() {
               <button
                 key={number}
                 onClick={() => paginate(number)}
-                className={`w-10 h-10 rounded-lg text-sm font-bold transition-all ${
+                className={`w-12 h-12 rounded-xl text-sm font-bold transition-all ${
                   currentPage === number
-                    ? "bg-purple-600 text-white shadow-lg shadow-purple-200 dark:shadow-none"
-                    : "border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                    ? "bg-purple-600 text-white shadow-xl shadow-purple-500/30 scale-110"
+                    : "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-purple-400"
                 }`}
               >
                 {number}
@@ -296,7 +285,7 @@ export default function Projects() {
           <button
             onClick={() => paginate(Math.min(totalPages, currentPage + 1))}
             disabled={currentPage === totalPages}
-            className="p-2 rounded-lg border border-gray-200 dark:border-gray-700 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            className="p-2 rounded-xl border border-gray-200 dark:border-gray-700 disabled:opacity-20 disabled:cursor-not-allowed hover:bg-white dark:hover:bg-gray-800 hover:shadow-md transition-all h-12 w-12 flex items-center justify-center"
           >
             <FaChevronRight className="text-gray-600 dark:text-gray-400" />
           </button>
