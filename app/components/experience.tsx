@@ -14,7 +14,7 @@ const experiences = [
     ],
   },
   {
-    company: "iCog Labs",
+    company: "iCog ",
     location: "Addis Ababa, Ethiopia",
     title: "Front-End Developer",
     period: "February 2025 – September 2025",
